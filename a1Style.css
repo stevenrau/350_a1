@@ -1,0 +1,22 @@
+body
+{
+    margin:0px;
+    background:#FFFFFF;
+}
+
+.header
+{
+    height:10%px;
+    background:#FFFFFF;
+    border:1px solid #CCC;
+    width:100%;
+    margin:0px auto;
+}
+.content
+{
+    width:960px;
+    background: #FFFFFF;
+    border: 1px solid #CCC;
+    height: 2000px;
+    margin: 70px auto;
+}
