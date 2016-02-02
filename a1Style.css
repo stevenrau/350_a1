@@ -1,22 +1,43 @@
 body
 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
     margin:0px;
     background:#FFFFFF;
 }
 
-.header
+header
 {
-    height:10%px;
+    height:50%;
     background:#FFFFFF;
+    padding: 1%;
     border:1px solid #CCC;
-    width:100%;
+    width:95%;
     margin:0px auto;
 }
-.content
+
+h1
 {
-    width:960px;
-    background: #FFFFFF;
-    border: 1px solid #CCC;
-    height: 2000px;
-    margin: 70px auto;
+    float:inherit;
+    position: relative;
+    color:rebeccapurple;
+    font-size:5vw;
+}
+
+.navigation
+{
+    text-decoration: none;
+    color:black;
+    font-size:3vw;
+}
+
+.navigation:hover
+{
+    color:dimgrey;
+}
+
+nav
+{
+    padding-left: 1%;
+    margin:1%;
 }
