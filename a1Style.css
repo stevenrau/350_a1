@@ -1,43 +1,91 @@
+/* Top-level body style */
 body
 {
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: "Arial", Gadget, sans-serif;
     font-size: 20px;
-    margin:0px;
-    background:#FFFFFF;
+    color: #ffffff;
+    margin:15px;
+    padding: 15px;
+    background-color: #1a1a1a;
 }
 
+/*======================================================= */
+/* Start of header CSS */
+/*======================================================= */
 header
 {
+    text-align:center;
+    border-radius: 1em;
     height:50%;
-    background:#FFFFFF;
-    padding: 1%;
-    border:1px solid #CCC;
+    background:#0d0d0d;
+    border:5px solid #CCC;
     width:95%;
-    margin:0px auto;
+    margin:2% auto;
+    padding-bottom: 15px;
 }
 
-h1
+/* The logo in the header */
+#header_logo
 {
-    float:inherit;
-    position: relative;
-    color:rebeccapurple;
-    font-size:5vw;
+    border-radius: 1em;
+    vertical-align: middle;
+    display:inline;
+}
+
+/* The title in the header */
+#site_title
+{
+    padding-left:8%;
+    padding-right:8%;
+    font-size:6.5vw;
+    vertical-align: middle;
+    text-align:center;
+    display:inline-block;
+    color:#ffffff;
 }
 
 .navigation
 {
+    padding: 10px;
     text-decoration: none;
-    color:black;
-    font-size:3vw;
+    color:#b3b3b3;
 }
 
+/* The nav bar in the header */
 .navigation:hover
 {
-    color:dimgrey;
+    color:#89de7a;
 }
 
 nav
 {
-    padding-left: 1%;
+    font-size:3vw;
+    text-align:center;
     margin:1%;
+    color:#ffffff;
+}
+
+/*======================================================= */
+/* Start of main content CSS */
+/*======================================================= */
+
+#main
+{
+    margin:2% auto;
+    width:95%;
+}
+
+/*======================================================= */
+/* Start of footer CSS */
+/*======================================================= */
+
+footer
+{
+    text-align:center;
+    border-radius: 1em;
+    background:#0d0d0d;
+    border:5px solid #CCC;
+    width:95%;
+    margin:2% auto;
+    padding: 10px;
 }
