@@ -6,6 +6,7 @@ body
     color: #ffffff;
     margin:15px;
     padding: 15px;
+    padding-top: 0px;  /* Keep the header tight to the top */
     background-color: #1a1a1a;
 }
 
@@ -22,6 +23,7 @@ header
     width:95%;
     margin:2% auto;
     padding-bottom: 15px;
+    padding
 }
 
 /* The logo in the header */
@@ -46,6 +48,7 @@ header
 
 .navigation
 {
+    font-weight: bold;
     padding: 10px;
     text-decoration: none;
     color:#b3b3b3;
@@ -71,8 +74,29 @@ nav
 
 #main
 {
+    font-size:2.3vw;
     margin:2% auto;
     width:95%;
+}
+
+/* Keep the image at native resolution until it no longer fits on the page */
+@media only screen and (max-width: 475px)
+{
+    #content_pic
+    {
+        width:100%;
+        height:auto;
+    }
+}
+
+/* Handle retina displays: Load a higher res image */
+@media 
+(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+{ 
+    #content_pic
+    {
+        content: url("http://lorempixel.com/800/600/")
+    }
 }
 
 /*======================================================= */
@@ -88,4 +112,21 @@ footer
     width:95%;
     margin:2% auto;
     padding: 10px;
+}
+
+.footer_social
+{ 
+    margin:0 auto;
+    width: 40%;
+}
+
+.footer_social li
+{
+    list-style:none;
+    display:inline;
+}
+
+.social_icons
+{
+    border-radius: 3em;
 }

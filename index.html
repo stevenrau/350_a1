@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="a1Style.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="homeContentFill.js"></script>
     <title>Steven Rau - Home</title>
 </head>
 <body>
     <header>
-        <img id="header_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Random_App_Logo.png/320px-Random_App_Logo.png" alt="logo" width='30%' height='auto' />
+        <a href="index.html"><img id="header_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Random_App_Logo.png/320px-Random_App_Logo.png" alt="logo" width='30%' height='auto' /></a>
         <h1 id="site_title">Steven Rau</h1>
         <nav>
             <a class="navigation" href="index.html">Home</a> |
@@ -16,11 +18,26 @@
     </header>
     
     <div id="main">
-        <p> This is some content </p>
+        <img id="content_pic" src="http://lorempixel.com/400/200/" alt="content_image" />
+        <div id="main_text"></div>
 	</div>
     
     <footer>
-        <small id="copyright">Copyright &copy; 2016 Steven Rau</small>
+        <div class="footer_social">
+            <li><a href="http://facebook.com/#">
+                <img class="social_icons" src='social_icons/facebook.png' width='15%' height='auto'/>
+                </a>
+            </li>
+            <li><a href="http://twitter.com/#">
+                <img class="social_icons" src='social_icons/twitter.png' width='15%' height='auto'/>
+                </a>
+            </li>
+            <li><a href="http://linkedin.com/#">
+                <img class="social_icons" src='social_icons/linkedin.png' width='15%' height='auto'/>
+                </a>
+            </li>
+        </div>
+        <small id="footer_copyright">Copyright &copy; 2016 Steven Rau</small>
     </footer>
 </body>
 </html>
