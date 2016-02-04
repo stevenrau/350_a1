@@ -69,10 +69,10 @@ nav
 }
 
 /*======================================================= */
-/* Start of main content CSS */
+/* Start of home content CSS */
 /*======================================================= */
 
-#main
+#home_main
 {
     font-size:2.3vw;
     margin:2% auto;
@@ -97,6 +97,61 @@ nav
     {
         content: url("http://lorempixel.com/800/600/")
     }
+}
+
+/*======================================================= */
+/* Start of aboutMe content CSS */
+/*======================================================= */
+
+#business_card
+{
+    margin:2% auto;
+    text-align:center;
+    background-color:#525252;
+    display:table;
+    border:5px solid #CCC;
+    border-radius: 0.75em;
+    padding-top:15px;
+    padding-bottom:15px;
+    width:60%;
+}
+
+#card_left
+{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#card_pic
+{
+    padding-left:1%;
+    vertical-align: middle;
+    display:inline-block;
+    height:100%%;
+}
+
+#card_name
+{
+    padding-left: 3%;
+    padding-right: 3%;
+    vertical-align: middle;
+    display:inline-block;
+    font-size:3vw;
+}
+
+#card_split
+{
+    border-right: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    height:10%;
+    display: table-cell;
+}
+
+#card_right
+{
+    font-size:2vw;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 /*======================================================= */
