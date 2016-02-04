@@ -170,6 +170,28 @@ nav
 }
 
 /*======================================================= */
+/* Start of contactMe content CSS */
+/*======================================================= */
+
+#form_div
+{
+    margin:2% auto;
+    text-align:center;
+    background-color:#525252;
+    display:table;
+    border:5px solid #CCC;
+    border-radius: 0.75em;
+    padding:10px;
+    width:60%;
+}
+
+.form_input
+{
+    border-radius: 0.4em;
+    margin-bottom: 8px;
+}
+
+/*======================================================= */
 /* Start of footer CSS */
 /*======================================================= */
 

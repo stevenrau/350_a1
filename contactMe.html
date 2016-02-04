@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="a1Style.css"> 
-    <title>Steven Rau - Home</title>
+    <link rel="stylesheet" type="text/css" href="a1Style.css">
+    <script src="contactMeFormValidation.js"></script>
+    <title>Steven Rau - Contact Me</title>
 </head>
 <body>
     <header>
@@ -16,7 +17,23 @@
     </header>
     
     <div id="main">
-        <p> Contact page </p>
+        <div id="form_div">
+            <form enctype="text/plain" onsubmit="return val_contact_form(this);">
+                First name:<br>
+                    <input class="form_input" type="text" name="firstname"><br>
+                Last name:<br>
+                    <input class="form_input" type="text" name="lastname"><br>
+                Email:<br>
+                    <input class="form_input" type="email" name="email"><br>
+                Phone #:<br>
+                    <input class="form_input" type="text" name="phone"><br>
+                Date #:<br>
+                    <input class="form_input" type="date" name="date"><br>
+                Message<br>
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
 	</div>
     
     <footer>
@@ -36,5 +53,6 @@
         </div>
         <small id="footer_copyright">Copyright &copy; 2016 Steven Rau</small>
     </footer>
+    
 </body>
 </html>
