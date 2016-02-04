@@ -124,34 +124,49 @@ nav
 
 #card_pic
 {
-    padding-left:1%;
+    border:3px solid #000000;
     vertical-align: middle;
     display:inline-block;
-    height:100%%;
+    height:60%;
+    width:auto;
+}
+
+#left_info
+{
+    display:inline-block;
+    vertical-align: middle;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 #card_name
 {
+    text-decoration: underline 
     padding-left: 3%;
     padding-right: 3%;
-    vertical-align: middle;
-    display:inline-block;
     font-size:3vw;
+    margin-bottom: 0;
 }
 
-#card_split
+.card_info
 {
-    border-right: 1px solid #CCC;
-    border-left: 1px solid #CCC;
-    height:10%;
-    display: table-cell;
+    font-size:1.6vw;
 }
 
-#card_right
+/* Keep the retina indicator "hidden" unless we are using a retina display. Used as a flag for the Jquery window resize callback */
+#retina_indicator
 {
-    font-size:2vw;
-    vertical-align: middle;
-    display: table-cell;
+    display:none;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+{ 
+    /* Display this "flag" once we've detected retina display */
+    #retina_indicator
+    {
+        display:block;
+    }
 }
 
 /*======================================================= */
